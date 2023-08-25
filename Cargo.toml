@@ -1,0 +1,18 @@
+[package]
+name = "cevio"
+description = "Rust から CeVIO/CeVIO AI の COM コンポーネント API を使用するためのライブラリ"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/JichouP/cevio-rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+thiserror = "1.0.47"
+windows = { version = "0.48.0", features = [
+    "Win32_Foundation",
+    "Win32_System_Com",
+    "Win32_System_Ole",
+] }
